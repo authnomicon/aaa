@@ -20,7 +20,14 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "main": "./lib",
+  "main": "./app",
+  "assembly": {
+    "namespace": "org.authnomicon/aaa",
+    "components": [
+      "main",
+      "middleware/login"
+    ]
+  },
   "devDependencies": {
     "make-node": "^0.3.0",
     "mocha": "^2.0.0",
