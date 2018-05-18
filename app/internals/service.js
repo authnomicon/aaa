@@ -7,7 +7,7 @@ exports = module.exports = function(IoC, login, logger) {
   
   service.use(function(req, txn, err) {
     console.log('???');
-    return txn.permit();
+    return txn.permit([ 'profile', 'email' ]);
   });
   
   
