@@ -26,7 +26,9 @@
     "namespace": "org.authnomicon/aaa",
     "components": [
       "main",
-      "middleware/login"
+      "middleware/login",
+      "consent/http/service",
+      "consent/http/ceremony"
     ]
   },
   "dependencies": {

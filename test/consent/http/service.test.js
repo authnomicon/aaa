@@ -14,7 +14,7 @@ describe('consent/http/service', function() {
   it('should be annotated', function() {
     expect(factory['@implements']).to.deep.equal([
       'http://i.bixbyjs.org/http/Service',
-      'http://schemas.authnomicon.org/js/sts/consent/HTTPService'
+      'http://schemas.authnomicon.org/js/aaa/consent/HTTPService'
     ]);
     expect(factory['@path']).to.equal('/consent');
     expect(factory['@singleton']).to.be.undefined;
